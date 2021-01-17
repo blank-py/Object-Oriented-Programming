@@ -23,4 +23,4 @@ print("Terminated")
 print("Negative integers in the list: ", (sum(1 for num in numList if num <0)))
 
 
-
+print("Even integers in the list: ", (sum(1 for num in numList if num % 2 == 0)))

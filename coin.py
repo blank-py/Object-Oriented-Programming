@@ -1,3 +1,8 @@
+# File name: coin.py
+# Author: Jesse Malinen
+# Description: short script for tossing a coin
+
+
 import random
 
 class Coin:
@@ -23,12 +28,14 @@ class Coin:
     def get_sideup(self):
         return self.sideup
     
+    
 # The main function
 
 def main():
     
     # Create an object from the Coin class.
     my_coin = Coin()
+    your_coin = Coin()
     
     # Display the side of the coin that is facing up.
     print('This side is up:', my_coin.get_sideup())

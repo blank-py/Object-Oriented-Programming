@@ -7,7 +7,7 @@ import random
 
 class Coin:
     
-    # The __init__ method initializes the sideup data attribute with heads
+    # The __init__ method initializes the sideup data attribute with 'heads'
     
     def __init__(self):
         self.sideup = 'Heads'
@@ -35,7 +35,7 @@ def main():
     
     # Create an object from the Coin class.
     my_coin = Coin()
-    your_coin = Coin()
+    #your_coin = Coin()
     
     # Display the side of the coin that is facing up.
     print('This side is up:', my_coin.get_sideup())

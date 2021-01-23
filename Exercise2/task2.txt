@@ -1,0 +1,22 @@
+Pseudocode for task 2
+
+User inputs the number of accepted exercises 
+and the program prints out their grade.
+
+User input: integer(Exercise amount)
+
+if Exercise amount is lower than 9:
+    print: You have failed the course due to lack of completed exercises.
+elif Exercise amount is 9:
+    print: Your grade is 1.
+elif Exercise amount is 10:
+    print: Your grade is 2.
+elif Exercise amount is 11:
+    print: Your grade is 3.
+elif Exercise amount is 12:
+    print: Your grade is 4.
+elif Exercise amount is 13 or higher:
+    print: Your grade is 5.
+else:
+    print: Incorrect input, unable to provide grade.
+

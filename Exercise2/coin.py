@@ -13,15 +13,21 @@ class Coin:
         self.sideup = 'Heads'
     
     # The toss method generates a random number
-    # in the range of 0 through 1. If the number is
+    # in the range of 0 through 2. If the number is
     # 0, then the sideup is set to 'Heads',
-    # otherwise it is set to 'Tails'.
+    # 1 it is set to 'Tails',
+    # 2 it is set to 'Upright on the table, no side is up',
+    # and otherwise is set to 'Fell into a rabbit hole and disappeared'
     
     def toss(self):
-        if random.randint(0, 1) == 0:
+        if random.randint(0, 2) == 0:
             self.sideup = 'Heads'
-        else:
+        elif random.randint(0, 2) == 1:
             self.sideup = 'Tails'
+        elif random.randint(0, 2) == 2:
+            self.sideup = 'Upright, no side is up'
+        else:
+            self.sideup = 'into a rabbit hole and disappeared.'
     
     # The get_sideup method returns the value referenced by sideup
             
@@ -45,7 +51,7 @@ def main():
     my_coin.toss()
     
     # Display the side of the coin that is facing up.
-    print('This side is up:', my_coin.get_sideup())
+    print('The coin has landed:', my_coin.get_sideup())
 
     
 # Call the main function.

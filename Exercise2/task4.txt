@@ -1,0 +1,15 @@
+Pseudocode for task 4.
+
+Program accepts student's name and grade as input,
+counts the average of grades of all students.
+
+List of students = user input(Name of the student)
+List of grades = user input(integer(student's grade))
+list of grades.append
+
+Average of grades:
+    Check how many grades are in the list
+    Get sum of the grades
+    Divide the sum by amount of grades
+    print: Average of grades
+

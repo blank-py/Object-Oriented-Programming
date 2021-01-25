@@ -1,0 +1,25 @@
+pseudocode for an alarm clock
+
+Ask the user for current time (or use device time)
+and for the time they would like to set the alarm for.
+The alarm will then ring at said time.
+
+define current time(hours, minutes):
+    device current time OR 
+    user input(current_time)
+
+define set alarm time(hours, minutes):
+    if alarm is set off
+        user input(set alarm time)
+        alarm on
+    else:
+        alarm off
+    
+
+define main script
+    check device time
+    check set alarm time
+    if device time is set alarm time
+        sound the alarm
+    else:
+        check again
